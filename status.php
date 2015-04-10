@@ -15,6 +15,7 @@ function GetServerStatus($site, $port) {
 	} else {
 		return $status[1];
 	}
+	fclose($fp);
 }
 
 $localhost = GetServerStatus('127.0.0.1',80);
